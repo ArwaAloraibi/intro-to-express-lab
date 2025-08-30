@@ -11,7 +11,7 @@ const PORT =3000;
 
 
 
-//Excersice 1
+//Exercise 1
 //Task: Create a route that responds to URLs like /greetings/<username-parameter>.
 app.get('/greetings/:name', (req, res) => {
     // Accessing query parameters from the request
@@ -22,7 +22,7 @@ app.get('/greetings/:name', (req, res) => {
 });
 
 
-//Excersice 2
+//Exercise 2
 
 app.get('/roll/:number', (req,res)=>{
 
@@ -39,7 +39,7 @@ else{
 });
 
 
-//Excersice 3: I Want THAT One!
+//Exercise 3: I Want THAT One!
 //Task: Create a route for URLs like /collectibles/<index-parameter>.
 
 const collectibles = [
@@ -66,7 +66,7 @@ app.get('/collectibles/:num', (req, res) => {
     
 });
 
-//Excersice 4: Filter Shoes by Query Parameters
+//Exercise 4: Filter Shoes by Query Parameters
 
   const shoes = [
       { name: "Birkenstocks", price: 50, type: "sandal" },
