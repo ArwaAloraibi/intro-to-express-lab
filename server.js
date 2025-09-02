@@ -94,6 +94,7 @@ app.get('/shoes', (req, res) =>{
 
     if(minPrice){
         filtered = shoes.filter(shoe => shoe.price >= Number(minPrice));
+        // Ex: http://localhost:3000/shoes?minPrice=500
         
     } else if (maxPrice) {
         filtered = shoes.filter(shoe => shoe.price <= Number(maxPrice));
@@ -101,6 +102,12 @@ app.get('/shoes', (req, res) =>{
     } else if (type){
         filtered = shoes.filter(shoe => shoe.type === type);
     } 
+
+    else{
+         filtered = shoes;
+        //  Ex: http://localhost:3000/shoes
+
+    }
         res.send(filtered);
     
 });
